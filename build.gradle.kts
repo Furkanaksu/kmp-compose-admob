@@ -4,3 +4,11 @@ plugins {
     alias(libs.plugins.composeMultiplatform).apply(false)
     alias(libs.plugins.composeCompiler).apply(false)
 }
+
+// Repositories for standalone builds (not needed when used as includeBuild)
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
