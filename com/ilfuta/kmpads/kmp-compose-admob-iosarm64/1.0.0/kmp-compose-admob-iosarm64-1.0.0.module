@@ -136,10 +136,10 @@
           "name": "kmp-compose-admob-1.0.0.kotlin_resources.zip",
           "url": "kmp-compose-admob-iosarm64-1.0.0-kotlin_resources.kotlin_resources.zip",
           "size": 358,
-          "sha512": "12c4feb20fe8d70208a2851787097c53ad7a35e64ce90038368c4da47748708a20a6367ffd904b1ff1646eed9efeea9a96e1dfcdf651c30c643af99c09fbf1f9",
-          "sha256": "8e97462553664c2ea3636aa716273bb203209cb05ffe4cb87893a88d95cf7ddb",
-          "sha1": "6a3ed52bc45bb188691459e913b5c67744db8567",
-          "md5": "8e868669dd23208545befcd68faa15ab"
+          "sha512": "33c2988829342863e20544017cc776746d0693cdf0025292a47bc147d34e2184dafc6b8bd0c625d77d1b411e8f89be85c363b49e8f9324f66ff6f551e0b8d943",
+          "sha256": "40a9bbc6541005d016e72a7da61b1babb91dd0a42c684adb3c0ededf85048628",
+          "sha1": "70633d70b8709babde389ddc3260a8c263623753",
+          "md5": "b6a1911bca0b51dbfcbc4ac06694f83d"
         }
       ]
     },
@@ -188,10 +188,10 @@
           "name": "kmp-compose-admob-iosarm64-1.0.0-metadata.jar",
           "url": "kmp-compose-admob-iosarm64-1.0.0-metadata.jar",
           "size": 3626,
-          "sha512": "273ab815c5b6fbccbf390271fce768ce3f78d3b102f3243bbff551949ca4d595e6dcce5388a6b7d57a620f8c857e517519550ea1bdab02933fb769581e4fb3ac",
-          "sha256": "3a3372e758e8b5c71f0c8dc2fdc65f50065da1458aa9912f42a4be2c94f334cb",
-          "sha1": "ab9baaae8460c07ab33ab81104d3c934995f5e14",
-          "md5": "e3d77ea11318edfd6f4f549c8ddd573c"
+          "sha512": "5849c111d7983312ece86b3dc929c710113dbb1732e8c192f05b6b2c829cdf271c78fd821255230392f7a4c469a716946c057998d79aa558962b68cde7e890ba",
+          "sha256": "62fecc272d54aabba506b2411759bd48e64d37f9518a90045ceed0617ac6a394",
+          "sha1": "892f07933f69383f265f9db70b204e33f941a966",
+          "md5": "17b28a1a43e5947e854dc7b32e5fd3ea"
         }
       ]
     }
