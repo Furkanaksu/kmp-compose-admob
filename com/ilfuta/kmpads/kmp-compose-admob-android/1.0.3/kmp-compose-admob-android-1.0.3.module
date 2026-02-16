@@ -1,0 +1,198 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kmp-compose-admob/1.0.3/kmp-compose-admob-1.0.3.module",
+    "group": "com.ilfuta.kmpads",
+    "module": "kmp-compose-admob",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-compose-admob-release.aar",
+          "url": "kmp-compose-admob-android-1.0.3.aar",
+          "size": 13003,
+          "sha512": "62dda2cf2afe92dfa0f0de157ec5a4989afbd804284b05269eb1dd4e35f75afe221e79e3f6a89ad315ba786ce406a6e650b2c09bd82b0e763fd103db2c1d54c5",
+          "sha256": "b9c84ae5fca8533c847b5741f19dce8573848a56f9bfee4123f5c2ed52439c46",
+          "sha1": "8f2e1c8425691829d4fad5b62f05c466bc60eff9",
+          "md5": "28c6069a175ca6e166c96fc93dedc583"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-ads",
+          "version": {
+            "requires": "24.6.0"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.9.0-beta03"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.9.0-beta03"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.9.0-beta03"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-compose-admob-release.aar",
+          "url": "kmp-compose-admob-android-1.0.3.aar",
+          "size": 13003,
+          "sha512": "62dda2cf2afe92dfa0f0de157ec5a4989afbd804284b05269eb1dd4e35f75afe221e79e3f6a89ad315ba786ce406a6e650b2c09bd82b0e763fd103db2c1d54c5",
+          "sha256": "b9c84ae5fca8533c847b5741f19dce8573848a56f9bfee4123f5c2ed52439c46",
+          "sha1": "8f2e1c8425691829d4fad5b62f05c466bc60eff9",
+          "md5": "28c6069a175ca6e166c96fc93dedc583"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "kmp-compose-admob-android-1.0.3-sources.jar",
+          "url": "kmp-compose-admob-android-1.0.3-sources.jar",
+          "size": 4028,
+          "sha512": "f219e29aa7d8444ba0f4f73d972e8233c012f3864210419468640ecd78c22e758045b124b015dcc49d6774b05b56befd792e66849cf6e8b84430db9432232479",
+          "sha256": "b0e043770dcb122b051c9bc3c1c41a892fbda1371cbe90e491ed6b87877ad6dd",
+          "sha1": "7ac462aee9318023037b893eb594affee698ff24",
+          "md5": "65f6c75abed74596536bc2f08fda9131"
+        }
+      ]
+    }
+  ]
+}
