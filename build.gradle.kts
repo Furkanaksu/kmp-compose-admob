@@ -69,6 +69,13 @@ allprojects {
 }
 
 publishing {
+    repositories {
+        maven {
+            name = "GitHubMaven"
+            // GitHub Actions publish target: build/repo → maven branch
+            url = uri(layout.buildDirectory.dir("repo"))
+        }
+    }
     publications {
         withType<MavenPublication> {
             pom {
