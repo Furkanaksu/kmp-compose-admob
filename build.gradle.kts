@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.ilfuta.kmpads"
-version = "1.0.3"
+version = "1.0.4"
 
 kotlin {
     androidTarget {

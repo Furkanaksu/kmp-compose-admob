@@ -13,17 +13,21 @@ import platform.UIKit.UIViewController
  * import KMPAdMob
  *
  * KMPAdsInitializerKt.IOSBanner = KMPAdMobSetup.defaultBannerFactory(adUnitId: "ca-app-pub-xxx/yyy")
+ * KMPAdsInitializerKt.IOSCollapsibleBanner = KMPAdMobSetup.collapsibleBannerFactory(adUnitId: "ca-app-pub-xxx/yyy")
  * KMPAdsInitializerKt.IOSLoadInterstitialAd = GoogleAdsWrapper.shared.loadInterstitialAd
  * KMPAdsInitializerKt.IOSShowInterstitialAd = GoogleAdsWrapper.shared.showInterstitialAd
  * KMPAdsInitializerKt.IOSIsInterstitialAdReady = GoogleAdsWrapper.shared.isInterstitialAdReady
  * ```
  */
 lateinit var IOSBanner: () -> UIViewController
+lateinit var IOSCollapsibleBanner: (String) -> UIViewController
 lateinit var IOSLoadInterstitialAd: (String, () -> Unit, (String) -> Unit) -> Unit
 lateinit var IOSShowInterstitialAd: (() -> Unit, (String) -> Unit) -> Unit
 lateinit var IOSIsInterstitialAdReady: () -> Boolean
 
 internal fun getIOSBanner(): UIViewController = IOSBanner()
+
+internal fun getIOSCollapsibleBanner(position: String): UIViewController = IOSCollapsibleBanner(position)
 
 internal fun loadIOSInterstitialAd(
     adUnitId: String,

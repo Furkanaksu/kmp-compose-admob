@@ -17,6 +17,9 @@ import GoogleMobileAds
 ///         KMPAdsInitializerKt.IOSBanner = KMPAdMobSetup.defaultBannerFactory(
 ///             adUnitId: "ca-app-pub-xxx/yyy"
 ///         )
+///         KMPAdsInitializerKt.IOSCollapsibleBanner = KMPAdMobSetup.collapsibleBannerFactory(
+///             adUnitId: "ca-app-pub-xxx/yyy"
+///         )
 ///         KMPAdsInitializerKt.IOSLoadInterstitialAd  = GoogleAdsWrapper.shared.loadInterstitialAd
 ///         KMPAdsInitializerKt.IOSShowInterstitialAd  = GoogleAdsWrapper.shared.showInterstitialAd
 ///         KMPAdsInitializerKt.IOSIsInterstitialAdReady = {
@@ -35,6 +38,15 @@ public class KMPAdMobSetup {
     public static func defaultBannerFactory(adUnitId: String) -> () -> UIViewController {
         return {
             let view = BannerAdView(adUnitId: adUnitId)
+            return UIHostingController(rootView: AnyView(view))
+        }
+    }
+
+    /// Returns a closure that creates a `UIViewController` containing a collapsible banner ad.
+    /// Pass this to `KMPAdsInitializerKt.IOSCollapsibleBanner`.
+    public static func collapsibleBannerFactory(adUnitId: String) -> (String) -> UIViewController {
+        return { position in
+            let view = CollapsibleBannerAdView(adUnitId: adUnitId, collapsiblePosition: position)
             return UIHostingController(rootView: AnyView(view))
         }
     }

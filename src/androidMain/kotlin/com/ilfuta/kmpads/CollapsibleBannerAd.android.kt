@@ -1,6 +1,7 @@
 package com.ilfuta.kmpads
 
 import android.annotation.SuppressLint
+import android.os.Bundle
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.runtime.Composable
@@ -19,18 +20,25 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.LoadAdError
+import com.google.ads.mediation.admob.AdMobAdapter
 
 @SuppressLint("MissingPermission", "ConfigurationScreenWidthHeight")
 @Composable
-actual fun CustomBannerAd(
+actual fun CollapsibleBannerAd(
     modifier: Modifier,
-    adUnitId: String
+    adUnitId: String,
+    collapsiblePosition: CollapsibleBannerPosition
 ) {
     val context = LocalContext.current
     var adError by remember { mutableStateOf<String?>(null) }
 
     val configuration = LocalConfiguration.current
     val adWidthPx = with(LocalDensity.current) { configuration.screenWidthDp.dp.toPx() }
+
+    val positionValue = when (collapsiblePosition) {
+        CollapsibleBannerPosition.TOP -> "top"
+        CollapsibleBannerPosition.BOTTOM -> "bottom"
+    }
 
     if (adError == null) {
         AndroidView(
@@ -58,7 +66,14 @@ actual fun CustomBannerAd(
                     }
                 }
 
-                adView.loadAd(AdRequest.Builder().build())
+                val extras = Bundle()
+                extras.putString("collapsible", positionValue)
+
+                val adRequest = AdRequest.Builder()
+                    .addNetworkExtrasBundle(AdMobAdapter::class.java, extras)
+                    .build()
+
+                adView.loadAd(adRequest)
                 adView
             }
         )
