@@ -1,0 +1,199 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kmp-compose-admob/1.0.4/kmp-compose-admob-1.0.4.module",
+    "group": "com.ilfuta.kmpads",
+    "module": "kmp-compose-admob",
+    "version": "1.0.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-compose-admob-iosSimulatorArm64Main-1.0.4.klib",
+          "url": "kmp-compose-admob-iossimulatorarm64-1.0.4.klib",
+          "size": 19019,
+          "sha512": "6ca2f0d10d5e9925a106f7521573dc7c07b5d46a6dd6c07a3a351d2f381b4953b84e2517d1fc33c1c4085ff30e23f4aefd9137d0a642c9f50d238770b3cd26d1",
+          "sha256": "19027147ed91423da38a4e654c5112639d76af8bc12fa56c5e8ac1ba056bf14d",
+          "sha1": "8a9c1050f37a4a757595360d0d70d330cf9df6d1",
+          "md5": "8813da12cbd4f218011a9f29c50cc8b4"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kmp-compose-admob-iossimulatorarm64-1.0.4-sources.jar",
+          "url": "kmp-compose-admob-iossimulatorarm64-1.0.4-sources.jar",
+          "size": 5130,
+          "sha512": "0150efa400d5de4c547203ec2a9e3d5bd34b48a93f6b821b2de46604cd40625c3b91aa374208c9a1fb96ea2f778de47e8b8e9f35013b09cba965d1969ae48e6b",
+          "sha256": "62fa40467b56ac40ca7c649baec505c08247762e1d17e940df773a02d8ce1b12",
+          "sha1": "b4c487c83e64d5eec698839ee835f322494d2b0d",
+          "md5": "97ab29fb76db590870aee0d7100ef459"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-compose-admob-1.0.4.kotlin_resources.zip",
+          "url": "kmp-compose-admob-iossimulatorarm64-1.0.4-kotlin_resources.kotlin_resources.zip",
+          "size": 358,
+          "sha512": "8524137bf0074b333d0598b2cc9cae9477377be9ea01ee346ae34851f856e808ba133e630411add32348b52848a1126a91cc73980cefdb9d39ff71f72e46d361",
+          "sha256": "bd7d4f933074b91c46021cd4960410f9f5fb77078c02c2b107cdb0e897376b37",
+          "sha1": "10d26758b58cac1b19a7b56bf9070a8a5d0d3965",
+          "md5": "bf6af066ca79bb028bb7614ed0087df8"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.9.0-beta03"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-compose-admob-iossimulatorarm64-1.0.4-metadata.jar",
+          "url": "kmp-compose-admob-iossimulatorarm64-1.0.4-metadata.jar",
+          "size": 4141,
+          "sha512": "7cbc816ab0154e25079ba9b0c6915166cbad29861f5d8aadef65f579769ee12944912ea272b0503d27f8ac819195ebd094688bea309981391c639082cec33e50",
+          "sha256": "be5a337b1d6b230c3824c5c2a7b0c4b2ab40441b64909e8d834210082e7b0f4a",
+          "sha1": "e755676f741fb87bc87c551928ca0a3d310369d6",
+          "md5": "3a281cb3500a0de0f877f29d876dcea5"
+        }
+      ]
+    }
+  ]
+}
